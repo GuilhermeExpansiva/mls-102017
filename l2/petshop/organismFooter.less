@@ -1,0 +1,68 @@
+/// <mls shortName="organismFooter" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+petshop--organism-footer-102017 {
+  .footer-container {
+    padding: @space-32;
+    background-color: @bg-primary-color-darker;
+    color: @text-primary-color;
+    text-align: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: @space-24;
+  }
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: @space-16;
+  }
+  .footer-title {
+    font-size: @font-size-20;
+    font-weight: @font-weight-bold;
+    margin-bottom: @space-16;
+  }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-item {
+    margin-bottom: @space-8;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: @text-primary-color;
+    &:hover {
+      color: @text-primary-color-hover;
+    }
+  }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: @space-16;
+  }
+  .footer-social-link {
+    color: @text-primary-color;
+    font-size: @font-size-24;
+    text-decoration: none;
+    &:hover {
+      color: @text-primary-color-hover;
+    }
+  }
+  .footer-bottom {
+    border-top: 1px solid @grey-color;
+    padding-top: @space-16;
+    font-size: @font-size-12;
+    color: @text-primary-color-darker;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+

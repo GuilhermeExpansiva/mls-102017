@@ -1,0 +1,59 @@
+/// <mls shortName="organismFilters" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-filters
+petshop--organism-filters-102017 {
+  background-color: @bg-secondary-color;
+  padding: @space-16;
+  border-right: 1px solid @grey-color;
+
+  .filter-title {
+    font-size: @font-size-20;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+  }
+
+  .filter-group {
+    margin-bottom: @space-24;
+
+    label {
+      display: block;
+      font-size: @font-size-16;
+      color: @text-primary-color;
+      margin-bottom: @space-8;
+    }
+
+    select, input {
+      width: 100%;
+      padding: @space-8;
+      border: 1px solid @grey-color;
+      border-radius: 4px;
+      font-size: @font-size-16;
+
+      &:focus {
+        border-color: @active-color;
+        outline: none;
+      }
+    }
+  }
+
+  .apply-filters {
+    background-color: @text-primary-color;
+    color: @bg-primary-color;
+    border: none;
+    padding: @space-16;
+    width: 100%;
+    font-size: @font-size-16;
+    font-weight: @font-weight-bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color @transition-normal;
+
+    &:hover {
+      background-color: @text-primary-color-hover;
+    }
+  }
+}
+
+

@@ -1,0 +1,51 @@
+/// <mls shortName="organismManageProducts" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-manage-products
+petshop--organism-manage-products-102017 {
+  
+  .manage-container {
+    h2 {
+      color: @text-primary-color;
+      font-size: @font-size-24;
+      margin-bottom: @space-24;
+    }
+    .products-table {
+      width: 100%;
+      border-collapse: collapse;
+      th, td {
+        padding: @space-16;
+        border: 1px solid @grey-color;
+        text-align: left;
+      }
+      th {
+        background: @bg-secondary-color;
+        color: @text-primary-color;
+      }
+      button {
+        background: @active-color;
+        color: @bg-primary-color;
+        border: none;
+        padding: @space-8 @space-16;
+        cursor: pointer;
+        &:hover {
+          background: @active-color-hover;
+        }
+      }
+    }
+    .add-product-btn {
+      margin-top: @space-24;
+      background: @success-color;
+      color: @bg-primary-color;
+      border: none;
+      padding: @space-16;
+      font-size: @font-size-16;
+      cursor: pointer;
+      &:hover {
+        background: @success-color-hover;
+      }
+    }
+  }
+}
+
+

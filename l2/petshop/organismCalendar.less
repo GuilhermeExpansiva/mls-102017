@@ -1,0 +1,70 @@
+/// <mls shortName="organismCalendar" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-calendar
+petshop--organism-calendar-102017 {
+  .calendar-container {
+    background-color: @bg-primary-color;
+    padding: @space-24;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .calendar-header {
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+  }
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: @space-8;
+  }
+  .day {
+    padding: @space-16;
+    text-align: center;
+    border: 1px solid @grey-color;
+    cursor: pointer;
+    &:hover {
+      background-color: @bg-secondary-color;
+    }
+    &.available {
+      background-color: @success-color;
+      color: @bg-primary-color;
+    }
+    &.selected {
+      background-color: @active-color;
+      color: @bg-primary-color;
+    }
+  }
+  .time-slots {
+    margin-top: @space-24;
+    display: flex;
+    flex-wrap: wrap;
+    gap: @space-8;
+  }
+  .time-slot {
+    padding: @space-8 @space-16;
+    border: 1px solid @grey-color;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: @bg-secondary-color;
+    }
+    &.available {
+      background-color: @success-color;
+      color: @bg-primary-color;
+    }
+    &.selected {
+      background-color: @active-color;
+      color: @bg-primary-color;
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    .calendar-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+

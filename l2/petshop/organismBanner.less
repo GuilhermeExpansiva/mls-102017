@@ -1,0 +1,76 @@
+/// <mls shortName="organismBanner" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+petshop--organism-banner-102017 {
+  .banner-container {
+    position: relative;
+    height: 400px;
+
+    background-color: @bg-secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  .banner-content {
+    position: relative;
+    z-index: 3;
+    color: @bg-primary-color;
+    max-width: 600px;
+    padding: @space-24;
+  }
+  .banner-title {
+    font-size: @font-size-48;
+    font-weight: @font-weight-bold;
+    margin-bottom: @space-16;
+  }
+  .banner-subtitle {
+    font-size: @font-size-20;
+    margin-bottom: @space-24;
+  }
+  .banner-cta {
+    display: inline-block;
+    padding: @space-16 @space-32;
+    background-color: @text-secondary-color;
+    color: @bg-primary-color;
+    text-decoration: none;
+    font-weight: @font-weight-bold;
+    border-radius: 4px;
+    transition: background-color @transition-normal;
+    &:hover {
+      background-color: @text-secondary-color-hover;
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    .banner-container {
+      height: 300px;
+    }
+    .banner-title {
+      font-size: @font-size-40;
+    }
+    .banner-subtitle {
+      font-size: @font-size-16;
+    }
+  }
+}
+
+

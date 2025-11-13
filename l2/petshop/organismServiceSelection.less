@@ -1,0 +1,74 @@
+/// <mls shortName="organismServiceSelection" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-service-selection
+petshop--organism-service-selection-102017 {
+  .services-container {
+    background-color: @bg-primary-color;
+    padding: @space-24;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: @space-24;
+  }
+  .services-header {
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+  }
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: @space-16;
+  }
+  .service-item {
+    display: flex;
+    align-items: center;
+    padding: @space-16;
+    border: 1px solid @grey-color;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: @bg-secondary-color;
+    }
+    &.selected {
+      background-color: @active-color;
+      color: @bg-primary-color;
+    }
+  }
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: @space-16;
+  }
+  .service-details {
+    flex: 1;
+  }
+  .service-name {
+    font-size: @font-size-20;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+  }
+  .service-description {
+    font-size: @font-size-16;
+    color: @text-secondary-color;
+    margin-top: @space-8;
+  }
+  .service-price {
+    font-size: @font-size-12;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color-darker;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    .service-icon {
+      margin-right: 0;
+      margin-bottom: @space-8;
+    }
+  }
+}
+
+

@@ -1,0 +1,66 @@
+/// <mls shortName="organismRedeemForm" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+
+petshop--organism-redeem-form-102017 {
+    .redeem-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: @space-32;
+        border: 1px solid @grey-color;
+        border-radius: 8px;
+        background: @bg-secondary-color-lighter;
+    }
+
+    .redeem-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redeem-form label {
+        margin-bottom: @space-8;
+        font-weight: @font-weight-bold;
+        color: @text-primary-color;
+    }
+
+    .redeem-form select {
+        margin-bottom: @space-16;
+        padding: @space-8;
+        border: 1px solid @grey-color;
+        border-radius: 4px;
+    }
+
+    .balance-check {
+        font-size: @font-size-16;
+        color: @text-secondary-color;
+        margin-bottom: @space-16;
+    }
+
+    .submit-btn {
+        background: @active-color;
+        color: @bg-primary-color;
+        border: none;
+        padding: @space-16;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: @font-size-16;
+        transition: background @transition-normal;
+    }
+
+    .submit-btn:hover {
+        background: @active-color-hover;
+    }
+
+    .validation-msg {
+        margin-top: @space-16;
+        font-size: @font-size-16;
+        color: @warning-color;
+    }
+
+    @media (max-width: @breakpoint-small) {
+        .redeem-container {
+            padding: @space-16;
+        }
+    }
+}
+
+

@@ -1,0 +1,51 @@
+/// <mls shortName="adminPanel" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// page: admin-panel-102017
+petshop--admin-panel-102017 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: @bg-primary-color;
+    padding: @space-24;
+    box-shadow: 2px 0 5px @grey-color;
+  }
+  main {
+    margin-left: 250px;
+    margin-top: 60px; // assuming nav height
+    padding: @space-24;
+    flex: 1;
+  }
+  footer {
+    margin-left: 250px;
+    margin-top: auto;
+  }
+  @media (max-width: @breakpoint-medium) {
+    aside {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+    main {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    footer {
+      margin-left: 0;
+    }
+  }
+}
+
+
