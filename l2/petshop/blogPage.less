@@ -1,0 +1,31 @@
+/// <mls shortName="blogPage" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// page: blogPage
+petshop--blog-page-102017 {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  main {
+    flex: 1;
+    padding: @space-32;
+    background-color: @bg-primary-color;
+  }
+  footer {
+    margin-top: auto;
+  }
+  @media (max-width: @breakpoint-medium) {
+    main {
+      padding: @space-16;
+    }
+  }
+}
+
+

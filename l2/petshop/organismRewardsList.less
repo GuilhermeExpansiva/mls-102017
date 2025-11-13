@@ -1,0 +1,63 @@
+/// <mls shortName="organismRewardsList" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+petshop--organism-rewards-list-102017 {
+.rewards-container {
+max-width: 800px;
+margin: 0 auto;
+padding: @space-32;
+}
+.rewards-list {
+list-style: none;
+padding: 0;
+}
+.reward-item {
+display: flex;
+align-items: center;
+margin-bottom: @space-24;
+padding: @space-16;
+border: 1px solid @grey-color;
+border-radius: 8px;
+background: @bg-primary-color;
+}
+.reward-item img {
+width: 50px;
+height: 50px;
+margin-right: @space-16;
+}
+.reward-details {
+flex: 1;
+}
+.reward-details h3 {
+margin: 0;
+font-size: @font-size-20;
+color: @text-primary-color;
+}
+.reward-details p {
+margin: @space-8 0;
+color: @grey-color-dark;
+}
+.redeem-btn {
+background: @text-secondary-color;
+color: @bg-primary-color;
+border: none;
+padding: @space-8 @space-16;
+border-radius: 4px;
+cursor: pointer;
+transition: background @transition-normal;
+}
+.redeem-btn:hover {
+background: @text-secondary-color-hover;
+}
+@media (max-width: @breakpoint-medium) {
+.reward-item {
+flex-direction: column;
+text-align: center;
+}
+.reward-item img {
+margin-bottom: @space-16;
+}
+}
+}
+
+

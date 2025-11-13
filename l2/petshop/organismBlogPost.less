@@ -1,0 +1,94 @@
+/// <mls shortName="organismBlogPost" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-blog-post
+petshop--organism-blog-post-102017 {
+  .blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: @bg-primary-color;
+    padding: @space-32;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .post-title {
+    font-size: @font-size-40;
+    font-weight: @font-weight-bolder;
+    color: @text-primary-color;
+    margin-bottom: @space-24;
+    line-height: @line-height-large;
+  }
+  .post-meta {
+    font-size: @font-size-16;
+    color: @text-secondary-color-darker;
+    margin-bottom: @space-32;
+  }
+  .post-content {
+    font-size: @font-size-16;
+    line-height: @line-height-large;
+    color: @text-primary-color-darker;
+    margin-bottom: @space-32;
+    p {
+      margin-bottom: @space-16;
+    }
+  }
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: @space-24;
+  }
+  .comments-section {
+    border-top: 1px solid @grey-color;
+    padding-top: @space-24;
+  }
+  .comments-title {
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+  }
+  .comment {
+    background-color: @bg-secondary-color-lighter;
+    padding: @space-16;
+    border-radius: 4px;
+    margin-bottom: @space-16;
+  }
+  .comment-author {
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-8;
+  }
+  .comment-text {
+    color: @text-primary-color-darker;
+    line-height: @line-height-medium;
+  }
+  .share-buttons {
+    display: flex;
+    gap: @space-16;
+    margin-top: @space-24;
+    .share-button {
+      padding: @space-8 @space-16;
+      background-color: @text-primary-color;
+      color: @bg-primary-color;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: @font-weight-bold;
+      transition: background-color @transition-normal;
+      &:hover {
+        background-color: @text-primary-color-hover;
+      }
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    .blog-post {
+      padding: @space-16;
+    }
+    .post-title {
+      font-size: @font-size-24;
+    }
+  }
+}
+
+

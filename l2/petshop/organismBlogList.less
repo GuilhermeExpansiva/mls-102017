@@ -1,0 +1,60 @@
+/// <mls shortName="organismBlogList" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-blog-list
+petshop--organism-blog-list-102017 {
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: @space-24;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .blog-item {
+    background-color: @bg-secondary-color;
+    border-radius: 8px;
+    padding: @space-24;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform @transition-normal;
+    &:hover {
+      transform: translateY(-4px);
+      background-color: @bg-secondary-color-lighter;
+    }
+  }
+  .blog-title {
+    font-size: @font-size-20;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+    line-height: @line-height-medium;
+  }
+  .blog-summary {
+    font-size: @font-size-16;
+    color: @text-primary-color-darker;
+    margin-bottom: @space-16;
+    line-height: @line-height-medium;
+  }
+  .blog-link {
+    color: @link-color;
+    text-decoration: none;
+    font-weight: @font-weight-bold;
+    &:hover {
+      color: @link-color-hover;
+    }
+  }
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: @space-16;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .blog-list {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+

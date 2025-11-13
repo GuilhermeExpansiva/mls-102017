@@ -1,0 +1,56 @@
+/// <mls shortName="organismNav" project="102017" folder="petshop" groupName="petshop" enhancement="_100554_enhancementStyle" />
+
+ 
+petshop--organism-nav-102017 {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @space-16;
+    background-color: @bg-primary-color;
+    border-bottom: 1px solid @grey-color;
+  }
+  .nav-logo {
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+  }
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-item {
+    margin-left: @space-24;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: @text-primary-color;
+    font-size: @font-size-16;
+    transition: color @transition-normal;
+    &:hover {
+      color: @text-primary-color-hover;
+    }
+  }
+  .nav-icon {
+    margin-right: @space-8;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-menu {
+      flex-direction: column;
+      width: 100%;
+      margin-top: @space-16;
+    }
+    .nav-item {
+      margin-left: 0;
+      margin-bottom: @space-8;
+    }
+  }
+}
+
+
